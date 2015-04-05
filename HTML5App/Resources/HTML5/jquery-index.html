@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Single page template</title>
+        <link rel="stylesheet" href="jquery.mobile-1.4.2.min.css" />
+        <script src="jquery.js"></script>
+        <script src="jquery.mobile-1.4.2.min.js"></script>
+        
+        <!-- http://stackoverflow.com/questions/8718384/why-is-my-header-text-being-truncated -->
+        <style>
+            .ui-header .ui-title {
+                margin-right: 10%;
+                margin-left: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-role="page">
+            
+            <!-- Header -->
+            <div data-role="header" data-theme="a">
+                <h2 style="white-space: normal">JQuery Mobile Example</h2>
+            </div>
+            
+            <!-- Content -->
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true" data-filter="true" data-input="#filter-for-listview">
+                    <li><a href="./jquery-forms.html">Form Widgets</a></li>
+                    <li><a rel="external" href="./jquery-tables.html">Table Example</a></li>
+                </ul>
+            </div>
+            
+            <!-- Footer -->
+            <div data-role="footer">
+                <h4>Andrew Lim</h4>
+            </div>
+            
+        </div><!-- /page -->
+        
+    </body>
+</html>
